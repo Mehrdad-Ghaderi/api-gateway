@@ -31,15 +31,15 @@ public class ApiGatewayConfig {
 
                 .route(p ->
                         p.path("/api/v1/currency-exchange/**")
-                        .uri("lb://CURRENCY-EXCHANGE-SERVICE")
+                        .uri("lb://CURRENCY-EXCHANGE")
                 )
                 .route(p ->
                         p.path("/api/v1/currency-conversion/**")
-                                .uri("lb://CURRENCY-CONVERSION-SERVICE")
+                                .uri("lb://CURRENCY-CONVERSION")
                 )
                 .route(p ->
                         p.path("/api/v1/currency-conversion-feign/**")
-                                .uri("lb://CURRENCY-CONVERSION-SERVICE")
+                                .uri("lb://CURRENCY-CONVERSION")
                 )
 
                 .build();
