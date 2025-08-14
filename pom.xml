@@ -103,8 +103,8 @@
 					</image>
 					<pullPolicy>IF_NOT_PRESENT</pullPolicy>
 				</configuration>
-K
 			</plugin>
+
 		</plugins>
 	</build>
 </project>
